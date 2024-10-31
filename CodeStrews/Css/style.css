@@ -1,0 +1,299 @@
+.image{
+    width: 200px;
+    height: 60px;
+}
+.hero {
+    position: relative;
+    height: 100vh;
+    overflow: hidden; /* Hide overflow to prevent scrolling */
+}
+.hero video {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
+    z-index: 1;
+    transform: translate(-50%, -50%);
+    object-fit: cover; /* Cover the entire hero section */
+}
+.hero-content {
+    position: relative;
+    z-index: 2; /* Ensure text and button are above video */
+    color: white; /* Text color */
+    text-align: center; /* Center text */
+    top: 50%;
+    transform: translateY(-50%); /* Vertically center content */
+}
+
+.text-box {
+    width: 100%;
+    color: orange;
+    margin-top: 80px;
+    margin-bottom: 150px;
+    text-align: center;
+    
+} 
+.container {
+    padding: 10px 10%;
+}
+.text-box h1 {
+    font-size: 62px;
+}
+.td1, .td2 {
+    padding: 10px;
+    border: 1px solid #ccc;
+    text-align: center; /* Center text in table cells */
+}
+.tbl {
+    width: 100%; /* Make sure table uses full width */
+    margin: 0 auto; /* Center the table */
+}
+.text-box p {
+    margin: 10px 0 40px;
+    font-size: 14px;
+    color: #080808;
+    margin-left: 50px;
+} 
+
+ .hero-btn {
+    display: inline-block;
+    text-align: center;
+    text-decoration: none;
+    color: #080808;
+    border: 1px solid #f44336;
+    padding: 12px 34px;
+    font-size: 13px;
+    background: transparent;
+    position: relative;
+    cursor: pointer;
+}
+.hero-btn:hover {
+    border: 1px solid #f44336;
+    background: #f44336;
+    color: #fff;
+    transition: 1s;
+} 
+
+/* table */
+
+ /* table{
+    margin-left: 60px;
+ } */
+  
+.td1{
+    border: 2px solid black;
+    background-color: green;
+    color: white;
+    text-align: center;
+}
+
+.td2{
+border: 2px solid black;
+background-color: red;
+color: white;
+text-align: center;
+}
+
+/* Services */
+
+#services {
+    /* padding: 30px 0; */
+    text-align: center;
+}
+
+.services-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-gap: 40px;
+    margin-top: 50px;
+}
+
+.services-list div {
+    padding: 40px;
+    background: #fff;
+    font-size: 13px;
+    font-weight: 300;
+    border-radius: 10px;
+    transition: background 0.5s, transform 0.5s
+}
+
+.services-list div i {
+    font-size: 50px;
+    margin-bottom: 30px;
+}
+
+.services-list div h2 {
+    font-size: 30px;
+    font-weight: 500;
+    margin-bottom: 15px;
+}
+
+.services-list div a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 12px;
+    margin-top: 20px;
+    display: inline-block;
+}
+
+.services-list div:hover {
+    background: #ff004f;
+    transform: translateY(-10px);
+}
+.learnmore{
+    color: #080808;
+}
+
+/* Portfolio */
+#portfolio {
+    /* padding: 50px 0; */
+    text-align: center;
+}
+
+.work-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-gap: 40px;
+    margin-top: 50px;
+}
+
+.work {
+    border-radius: 10px;
+    position: relative;
+    overflow: hidden;
+}
+
+.work img {
+    width: 100%;
+    border-radius: 10px;
+    display: block;
+    transition: transform 0.5s;
+}
+
+.layer {
+    width: 100%;
+    height: 0%;
+    background: linear-gradient(rgba(247, 244, 244, 0.6), #ff004f);
+    border-radius: 10px;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 0 40px;
+    text-align: center;
+    font-size: 14px;
+    transition: height 0.5s;
+}
+
+.layer h3 {
+    font-weight: 500;
+    margin-bottom: 20px;
+}
+
+.layer a {
+    margin-top: 20px;
+    color: #ff004f;
+    text-decoration: none;
+    font-size: 18px;
+    line-height: 60px;
+    background: #fff;
+    width: 60px;
+    height: 60px;
+    border-radius: 50px;
+    text-align: center;
+}
+
+.work:hover img {
+    transform: scale(1.1);
+}
+.work:hover .layer{
+    height: 100%;
+}
+.btn{
+    display: block;
+    margin: 50px auto;
+    width: fit-content;
+    border: 1px solid #ff004f;
+    padding: 14px 50px;
+    border-radius: 6px;
+    text-decoration: none;
+    color: orange;
+    transition: background 0.5s;
+}
+.btn:hover{
+    background: #ff004f;
+}
+
+/* Why choose us? */
+.abc{
+    border: 1px solid #ff004f;
+    background-color: white;
+    width: 100px;
+    height: 50px;
+    border-radius: 5px;
+}
+.abc:hover{
+    background-color: red;
+    color: white;
+}
+span{
+    color: orange;
+}
+.underline{
+    /* background-color: black; */
+    text-align: center;
+}
+.social-icons{
+    font-size: 25px;
+}
+
+/* pricing */
+
+.card-body{
+    border: 2px solid black;
+    border-radius: 5px;
+}
+
+/* ---------contact-------- */
+.contact-form-container {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 400px;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+    color: #666;
+}
+
+input[type="text"], input[type="email"], textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-size: 14px;
+}
+
+textarea {
+    resize: vertical;
+    min-height: 100px;
+}
+.icons{
+    font-size: 25px;
+}
+
+/* footer */
+
+
